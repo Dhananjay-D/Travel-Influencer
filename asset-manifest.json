@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Travel-Influencer/static/css/main.319464df.css",
+    "main.js": "/Travel-Influencer/static/js/main.bb1d28b0.js",
+    "static/js/787.5480e000.chunk.js": "/Travel-Influencer/static/js/787.5480e000.chunk.js",
+    "index.html": "/Travel-Influencer/index.html",
+    "main.319464df.css.map": "/Travel-Influencer/static/css/main.319464df.css.map",
+    "main.bb1d28b0.js.map": "/Travel-Influencer/static/js/main.bb1d28b0.js.map",
+    "787.5480e000.chunk.js.map": "/Travel-Influencer/static/js/787.5480e000.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.319464df.css",
+    "static/js/main.bb1d28b0.js"
+  ]
+}
