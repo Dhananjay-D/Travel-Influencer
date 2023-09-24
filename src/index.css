@@ -1,4 +1,159 @@
+
+:root {
+  --color-primary: #57adbf;
+  --color-primary-light: rgba(255, 255, 255, 0.574);
+  --color-text: #13171b;
+  --color-text-dark: #adb5bd;
+  --color-background-100: #343a40;
+  --color-background-500: #2b3035;
+  --color-background-900: white;
+  --color-red: #fa5252;
+  --color-red-dark: #e03131;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  color: var(--color-text);
+  background-color: var(--color-background-900);
+  /* padding: 2.4rem; */
+}
+
+/* ******* */
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: black;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 7.2rem;
+  padding: 0 3.2rem;
+  /* background-color: var(--color-primary); */
+  background-color: #5260ff;
+  /* border-radius: 0.9rem; */
+  position: sticky;
+  top: 0px;
+  Color:white;
+  z-index: 2;
+}
+
+/* ******* */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo span {
+  font-size: 3.2rem;
+}
+
+.logo h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: white;
+}
+
+.search {
+  justify-self: center;
+  border: none;
+  padding: 1.1rem 1.6rem;
+  font-size: 1.8rem;
+  border-radius: 0.7rem;
+  width: 40rem;
+  transition: all 0.3s;
+  color: var(--color-text);
+  /* color:black; */
+
+  /* background-color: var(--color-background-900); */
+  /* background-color: var(--color-primary-light); */
+}
+
+.search::placeholder {
+  color: var(--color-text-dark);
+}
+
+.search:focus {
+  outline: none;
+  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* Vlogs.css */
+
+.vlogs-container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.vlogs-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.vlogs-subtitle {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #555;
+}
+
+.vlogs-description {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #777;
+}
+
+@media only screen and (max-width:540px) {
+  .search{
+    width:30rem;
+  }
+}
+
+@media only screen and (max-width:415px) {
+  .search{
+    width:20rem;
+  }
+  
+  .logo{
+    padding-right: 15px;
+  }
+}
+
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +165,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */

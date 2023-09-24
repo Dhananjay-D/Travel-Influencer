@@ -1,0 +1,169 @@
+ /* Reset some default styles */
+ body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the footer section */
+footer {
+   /* background-color: #f8f8f8; White background */
+    color: #333; /* Dark text color */
+    /* padding: 40px 0; */
+}
+
+.container {
+    max-width:auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* height:365px; */
+    justify-content: space-between;
+}
+
+.footer-content {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  background-color: white;
+     /* Light gray background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.footer-newsletter h3, .footer-blog h3, .footer-contact h3 {
+    /* color: #ff6600; */
+    color:#0bacff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold; /* Added font-weight */
+}
+
+.newsletter-form, .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.newsletter-form input[type="text"], .newsletter-form input[type="email"], .contact-form input[type="text"], .contact-form input[type="email"], .newsletter-form textarea, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-form textarea, .contact-form textarea {
+    resize: vertical;
+    min-height: 40px;
+}
+
+/* Styling for the Recent Blog Posts section */
+.footer-blog ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-blog ul li {
+    margin-bottom: 10px;
+}
+
+.footer-blog ul li a {
+    color: black; /* Black link color */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-blog ul li a:hover {
+    /* color: #ff6600;
+    Orange color on hover */
+    text-decoration: underline;
+}
+
+/* Styling for the bottom part of the footer */
+.footer-bottom {
+    background-color: #111;
+    /* padding: 20px 0; */
+}
+
+.footer-info, .footer-social {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.footer-info p {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul li {
+    margin: 0 15px;
+}
+
+.footer-social ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.foot-container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+}
+.footer-social ul li a:hover {
+    color: aqua;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    .foot-container {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    footer{
+        height: 1130px;
+    }
+
+    .newsletter-form input[type="text"], .newsletter-form input[type="email"], .contact-form input[type="text"], .contact-form input[type="email"], .newsletter-form textarea, .contact-form textarea {
+        width: 93%;
+    }
+}
+/* .head{
+    height: 1000px;
+    width: 100%;
+} */
