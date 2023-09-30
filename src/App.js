@@ -101,7 +101,7 @@ export default function App() {
     return (
       <div className="logo">
         <span role="img">✈️</span>
-        <h1 style={{ fontFamily: "serif", fontSize: "30px" }}>Hidden World</h1>
+        <h1 style={{ fontFamily: "serif", fontSize: "30px" }}>Bharat Tourism</h1>
       </div>
     );
   }
